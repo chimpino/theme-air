@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	{% if page is defined %}
+        <title>{pagetitle}</title>
+            <meta name="description" content="{pagemetadescription}">
+        {% endif %}
+        {% block stylesheets %}{% endblock %}
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">	 -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/animate.css', null, null, true) }}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/icomoon.css', null, null, true) }}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/bootstrap.css', null, null, true) }}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{ getAssetUrl('themes/'~template~'/css/style.css', null, null, true) }}">
+
+	<!-- Modernizr JS -->
+	<script src="{{ getAssetUrl('themes/'~template~'/js/modernizr-2.6.2.min.js', null, null, true) }}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{{ getAssetUrl('themes/'~template~'/js/respond.min.js', null, null, true) }}"></script>
+	<![endif]-->
+<!-- jQuery -->
+	<script src="{{ getAssetUrl('themes/'~template~'/js/jquery.min.js', null, null, true) }}"></script>
+	<!-- jQuery Easing -->
+	<script src="{{ getAssetUrl('themes/'~template~'/js/jquery.easing.1.3.js', null, null, true) }}"></script>
+	<!-- Bootstrap -->
+	<script src="{{ getAssetUrl('themes/'~template~'/js/bootstrap.min.js', null, null, true) }}"></script>
+	<!-- Waypoints -->
+	<script src="{{ getAssetUrl('themes/'~template~'/js/jquery.waypoints.min.js', null, null, true) }}"></script>
+	<!-- Main -->
+	<script src="{{ getAssetUrl('themes/'~template~'/js/main.js', null, null, true) }}"></script>
+     {#   {{ outputHeadDeclarations() }} #}
+	</head>
+	<body>
+        {{ outputScripts('bodyOpen') }}
+        {% block content %}{% endblock %}
+        {{ outputScripts('bodyClose') }}
+	
+	
+
+	</body>
+</html>
+

@@ -1,0 +1,7 @@
+{
+  "name": "Air",
+  "author": "Chimpino",
+  "authorUrl": "https://chimpino.com",
+  "builder": ["grapesjsbuilder"],
+  "features": ["page", "form"]
+}
