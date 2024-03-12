@@ -3,6 +3,7 @@
   "description": "Chimpino Air",
   "type": "mautic-theme",
   "keywords": ["mautic","theme"],
+  "license": "GPL-3.0-or-later",
   "extra": {
     "install-directory-name": "air"
   },
